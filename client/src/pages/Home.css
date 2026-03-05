@@ -1,0 +1,7 @@
+.restaurants-section {
+    background: var(--bg-primary);
+}
+
+.restaurant-grid {
+    margin-bottom: 30px;
+}

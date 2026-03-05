@@ -1,0 +1,57 @@
+.search-bar-wrapper {
+    margin-bottom: 24px;
+}
+
+.search-bar {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.cuisine-group {
+    margin-bottom: 48px;
+}
+
+.cuisine-header {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.cuisine-header h3 {
+    color: var(--gold);
+    font-size: 1.3rem;
+}
+
+.cuisine-count {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.loading-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border);
+    border-top: 3px solid var(--gold);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 16px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+}

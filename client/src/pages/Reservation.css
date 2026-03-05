@@ -1,0 +1,114 @@
+.reservation-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.reservation-form {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 32px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.restaurant-select-group {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.reservation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+}
+
+.info-card h4 {
+    margin-bottom: 12px;
+    color: var(--gold);
+}
+
+.info-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.restaurant-detail-card {
+    border-color: var(--gold);
+    background: linear-gradient(135deg, rgba(198, 167, 94, 0.08), rgba(198, 167, 94, 0.02));
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    color: var(--text-secondary);
+}
+
+.availability-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--bg-input);
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.availability-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold), var(--success));
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.confirmed-restaurant-info {
+    margin-top: 16px;
+    padding: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.confirmed-restaurant-info p {
+    margin-bottom: 4px;
+}
+
+.success-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .reservation-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
